@@ -34,17 +34,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core">
-      <HintPath>lib\Castle.Core.dll</HintPath>
-    </Reference>
     <Reference Include="FluentNHibernate">
-      <HintPath>lib\FluentNHibernate.dll</HintPath>
+      <HintPath>lib\FluentNhibernate\FluentNHibernate.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate">
-      <HintPath>lib\NHibernate.dll</HintPath>
+      <HintPath>lib\FluentNhibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle">
+      <HintPath>lib\FluentNhibernate\NHibernate.ByteCode.Castle.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>lib\SQLite\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
