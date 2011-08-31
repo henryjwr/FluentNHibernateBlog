@@ -1,14 +1,21 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="380" fromTop="17" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Classes/f:Meme.cs" caret="123" fromTop="6" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="51" fromTop="2" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="649" fromTop="19" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:MemeMap.cs" caret="358" fromTop="13" />
     </RecentFiles>
     <RecentEdits>
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="689" fromTop="26" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="93" fromTop="3" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="365" fromTop="14" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="445" fromTop="19" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="715" fromTop="23" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="216" fromTop="9" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="424" fromTop="13" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="649" fromTop="16" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="51" fromTop="2" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="649" fromTop="22" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="1000" fromTop="20" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Classes/f:Meme.cs" caret="0" fromTop="0" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Classes/f:Meme.cs" caret="123" fromTop="6" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:MemeMap.cs" caret="240" fromTop="10" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -31,16 +38,16 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="static" priority="63" />
-      <Item value="string" priority="63" />
+      <Item value="static" priority="95" />
+      <Item value="string" priority="159" />
       <Item value="ValueType`0" priority="31" />
       <Item value="EnvironmentVariableTarget`0" priority="31" />
-      <Item value="var" priority="127" />
-      <Item value="private" priority="31" />
-      <Item value="SQLiteConfiguration`0" priority="65" />
-      <Item value="x" priority="31" />
+      <Item value="var" priority="191" />
+      <Item value="private" priority="63" />
+      <Item value="SQLiteConfiguration`0" priority="163" />
+      <Item value="x" priority="159" />
       <Item value="computerStringName" priority="31" />
-      <Item value="m" priority="31" />
+      <Item value="m" priority="63" />
       <Item value="assembly" priority="31" />
       <Item value="return" priority="63" />
       <Item value="cfg" priority="31" />
@@ -48,37 +55,63 @@
       <Item value="factory" priority="31" />
       <Item value="Console`0" priority="63" />
       <Item value="null" priority="31" />
+      <Item value="void" priority="31" />
+      <Item value="if" priority="31" />
+      <Item value="FileStyleUriParser`0" priority="31" />
+      <Item value="File`0" priority="31" />
+      <Item value="new" priority="31" />
+      <Item value="SchemaAutoAction" priority="28" />
+      <Item value="true" priority="31" />
+      <Item value="const" priority="31" />
+      <Item value="tester" priority="31" />
+      <Item value="Environment`0" priority="95" />
+      <Item value="Fluently`0" priority="31" />
+      <Item value="DbFile" priority="63" />
+      <Item value="BuildSchema`0" priority="32" />
+      <Item value="ISession`0" priority="31" />
+      <Item value="session" priority="31" />
+      <Item value="public" priority="159" />
+      <Item value="MemeMap`0" priority="31" />
+      <Item value="Table`0" priority="63" />
+      <Item value="Map`0" priority="95" />
+      <Item value="ApplyFilter`0" priority="30" />
+      <Item value="Id`0" priority="31" />
+      <Item value="virtual" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Environment">
       <Item value="MachineName" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@FluentNHibernate.Cfg.Fluently">
-      <Item value="Configure`0" priority="27" />
+      <Item value="Configure`0" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentNHibernate.Cfg.FluentConfiguration">
-      <Item value="Database`0" priority="26" />
-      <Item value="Mappings`0" priority="26" />
-      <Item value="BuildSessionFactory`0" priority="26" />
+      <Item value="Database`0" priority="80" />
+      <Item value="Mappings`0" priority="53" />
+      <Item value="BuildSessionFactory`0" priority="53" />
+      <Item value="ExposeConfiguration`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@FluentNHibernate.Cfg.Db.MsSqlConfiguration">
       <Item value="MsSql2008" priority="28" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@FluentNHibernate.Cfg.Db.SQLiteConfiguration">
-      <Item value="Standard" priority="55" />
+      <Item value="Standard" priority="111" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.SQLiteConfiguration">
       <Item value="ConnectionString`0" priority="27" />
-      <Item value="UsingFile`0" priority="27" />
+      <Item value="UsingFile`0" priority="83" />
+      <Item value="InMemory`0" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentNHibernate.Cfg.Db.ConnectionStringBuilder">
       <Item value="FromAppSetting`0" priority="53" />
       <Item value="FromConnectionStringWithKey`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentNHibernate.Cfg.MappingConfiguration">
-      <Item value="FluentMappings" priority="26" />
+      <Item value="FluentMappings" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:FluentNHibernate.Cfg.FluentMappingsContainer">
       <Item value="AddFromAssembly`0" priority="26" />
+      <Item value="ExportTo`0" priority="26" />
+      <Item value="AddFromAssemblyOf`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Reflection.Assembly">
       <Item value="GetExecutingAssembly`0" priority="27" />
@@ -90,6 +123,19 @@
       <Item value="WindowHeight" priority="26" />
       <Item value="Write`0" priority="27" />
       <Item value="Read`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Exists`0" priority="26" />
+      <Item value="Delete`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Tool.hbm2ddl.SchemaExport">
+      <Item value="Create`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MemeCreator.Classes.Meme">
+      <Item value="ImagePath" priority="53" />
+      <Item value="TopMemeLine" priority="26" />
+      <Item value="BottomMemeLine" priority="26" />
+      <Item value="Id" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
