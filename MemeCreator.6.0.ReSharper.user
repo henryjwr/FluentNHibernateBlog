@@ -1,22 +1,7 @@
 <Configuration>
   <RecentFiles>
-    <RecentFiles>
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Classes/f:Meme.cs" caret="123" fromTop="6" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="51" fromTop="2" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="649" fromTop="19" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:MemeMap.cs" caret="358" fromTop="13" />
-    </RecentFiles>
-    <RecentEdits>
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="216" fromTop="9" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="424" fromTop="13" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="649" fromTop="16" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="51" fromTop="2" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="649" fromTop="22" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="1000" fromTop="20" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Classes/f:Meme.cs" caret="0" fromTop="0" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Classes/f:Meme.cs" caret="123" fromTop="6" />
-      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:MemeMap.cs" caret="240" fromTop="10" />
-    </RecentEdits>
+    <RecentFiles />
+    <RecentEdits />
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />

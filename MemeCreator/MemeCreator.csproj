@@ -63,8 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Meme.cs" />
-    <Compile Include="Maps\MemeMap.cs" />
+    <Compile Include="Classes\Comment.cs" />
+    <Compile Include="Classes\Post.cs" />
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Maps\CommentMap.cs" />
+    <Compile Include="Maps\PostMap.cs" />
+    <Compile Include="Maps\UserMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
