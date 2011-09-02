@@ -9,7 +9,7 @@ namespace FluentNhibernateBlog
     class Program
     {
         private static Configuration _configuration;
-        private const string DbFile = "memedatabase.db";
+        private const string DbFile = "blogdatabase.db";
         
         static void Main(string[] args)
         {
@@ -18,6 +18,40 @@ namespace FluentNhibernateBlog
             Console.Write("Done");
             Console.Read();
 
+            SelectAllPostsAndCommentsWithNPlus1();
+            SelectAllPostsAndCommentsNoNPlus1();
+
+            InsertNewPost();
+
+            FetchPostsWithPaging();
+
+            FetchCommentsForSinglePostWIthPaging();
+
+        }
+
+        private static void FetchCommentsForSinglePostWIthPaging()
+        {
+            
+        }
+
+        private static void FetchPostsWithPaging()
+        {
+            
+        }
+
+        private static void InsertNewPost()
+        {
+            
+        }
+
+        private static void SelectAllPostsAndCommentsWithNPlus1()
+        {
+            
+        }
+
+        private static void SelectAllPostsAndCommentsNoNPlus1()
+        {
+            
         }
 
         private static ISessionFactory CreateSessionFactory()
