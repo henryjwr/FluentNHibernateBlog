@@ -1,7 +1,38 @@
 <Configuration>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:app.config" caret="0" fromTop="0" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:Program.cs" caret="608" fromTop="23" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/f:packages.config" caret="0" fromTop="0" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Blog.cs" caret="969" fromTop="29" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Comment.cs" caret="136" fromTop="6" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:BlogMap.cs" caret="294" fromTop="14" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:PostMap.cs" caret="457" fromTop="18" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Post.cs" caret="167" fromTop="7" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:CommentMap.cs" caret="242" fromTop="10" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:UserMap.cs" caret="411" fromTop="17" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:User.cs" caret="383" fromTop="14" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Post.cs" caret="399" fromTop="10" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:UserMap.cs" caret="505" fromTop="16" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:User.cs" caret="369" fromTop="9" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:BlogMap.cs" caret="0" fromTop="0" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Comment.cs" caret="165" fromTop="7" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Blog.cs" caret="648" fromTop="20" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Post.cs" caret="167" fromTop="7" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Blog.cs" caret="502" fromTop="14" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Blog.cs" caret="409" fromTop="11" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:Blog.cs" caret="969" fromTop="29" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:BlogMap.cs" caret="407" fromTop="13" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:CommentMap.cs" caret="242" fromTop="10" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:BlogMap.cs" caret="294" fromTop="14" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:PostMap.cs" caret="230" fromTop="10" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:PostMap.cs" caret="457" fromTop="18" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:UserMap.cs" caret="230" fromTop="10" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Domain/f:User.cs" caret="162" fromTop="7" />
+      <File id="D37FABF3-0557-4109-B34C-D49459853D81/d:Maps/f:UserMap.cs" caret="411" fromTop="17" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -23,14 +54,14 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="static" priority="95" />
-      <Item value="string" priority="159" />
+      <Item value="static" priority="127" />
+      <Item value="string" priority="287" />
       <Item value="ValueType`0" priority="31" />
       <Item value="EnvironmentVariableTarget`0" priority="31" />
       <Item value="var" priority="191" />
       <Item value="private" priority="63" />
       <Item value="SQLiteConfiguration`0" priority="163" />
-      <Item value="x" priority="159" />
+      <Item value="x" priority="639" />
       <Item value="computerStringName" priority="31" />
       <Item value="m" priority="63" />
       <Item value="assembly" priority="31" />
@@ -40,7 +71,7 @@
       <Item value="factory" priority="31" />
       <Item value="Console`0" priority="63" />
       <Item value="null" priority="31" />
-      <Item value="void" priority="31" />
+      <Item value="void" priority="63" />
       <Item value="if" priority="31" />
       <Item value="FileStyleUriParser`0" priority="31" />
       <Item value="File`0" priority="31" />
@@ -55,13 +86,32 @@
       <Item value="BuildSchema`0" priority="32" />
       <Item value="ISession`0" priority="31" />
       <Item value="session" priority="31" />
-      <Item value="public" priority="159" />
+      <Item value="public" priority="927" />
       <Item value="MemeMap`0" priority="31" />
-      <Item value="Table`0" priority="63" />
-      <Item value="Map`0" priority="95" />
+      <Item value="Table`0" priority="127" />
+      <Item value="Map`0" priority="255" />
       <Item value="ApplyFilter`0" priority="30" />
-      <Item value="Id`0" priority="31" />
-      <Item value="virtual" priority="31" />
+      <Item value="Id`0" priority="127" />
+      <Item value="virtual" priority="511" />
+      <Item value="User`0" priority="127" />
+      <Item value="GetHashCode`0" priority="63" />
+      <Item value="AppDomainSetup`0" priority="31" />
+      <Item value="Post`0" priority="127" />
+      <Item value="Comment`0" priority="63" />
+      <Item value="PostMap`0" priority="31" />
+      <Item value="CommentMap`0" priority="31" />
+      <Item value="DateTime`0" priority="31" />
+      <Item value="List" priority="31" />
+      <Item value="_posts" priority="31" />
+      <Item value="post" priority="31" />
+      <Item value="comment" priority="31" />
+      <Item value="_comments" priority="31" />
+      <Item value="IDictionary" priority="31" />
+      <Item value="Guid`0" priority="95" />
+      <Item value="Blog`0" priority="31" />
+      <Item value="BlogMap`0" priority="31" />
+      <Item value="HasMany`1" priority="63" />
+      <Item value="References`1" priority="159" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Environment">
       <Item value="MachineName" priority="26" />
@@ -121,6 +171,48 @@
       <Item value="TopMemeLine" priority="26" />
       <Item value="BottomMemeLine" priority="26" />
       <Item value="Id" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MemeCreator.Classes.User">
+      <Item value="UserName" priority="26" />
+      <Item value="FirstName" priority="26" />
+      <Item value="LastName" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MemeCreator.Classes.Post">
+      <Item value="Id" priority="26" />
+      <Item value="PostTitle" priority="26" />
+      <Item value="PostInfo" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MemeCreator.Classes.Comment">
+      <Item value="Id" priority="26" />
+      <Item value="UserComment" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNhibernateBlog.Domain.Blog">
+      <Item value="Id" priority="26" />
+      <Item value="BlogTitle" priority="26" />
+      <Item value="GetPosts`0" priority="26" />
+      <Item value="GetComments`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.OneToManyPart`1">
+      <Item value="Inverse`0" priority="26" />
+      <Item value="Cascade" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.CollectionCascadeExpression`1">
+      <Item value="All`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNhibernateBlog.Domain.Comment">
+      <Item value="Blog" priority="26" />
+      <Item value="User" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNhibernateBlog.Domain.Post">
+      <Item value="Blog" priority="26" />
+      <Item value="User" priority="26" />
+      <Item value="PostCreatedDate" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNhibernateBlog.Domain.User">
+      <Item value="Blog" priority="26" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

@@ -4,7 +4,7 @@ using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Cfg;
 
-namespace MemeCreator
+namespace FluentNhibernateBlog
 {
     class Program
     {
