@@ -9,11 +9,8 @@ namespace FluentNhibernateBlog.Maps
          {
              Table("Posts");
 
-             Id(x => x.Id);
-
              Map(x => x.PostTitle);
              Map(x => x.PostInfo);
-             Map(x => x.PostCreatedDate);
 
              References(x => x.Blog);
              References(x => x.User);

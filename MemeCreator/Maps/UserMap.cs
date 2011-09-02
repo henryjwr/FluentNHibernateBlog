@@ -9,8 +9,6 @@ namespace FluentNhibernateBlog.Maps
          {
              Table("Users");
 
-             Id(x => x.Id);
-
              Map(x => x.UserName);
              Map(x => x.FirstName);
              Map(x => x.LastName);

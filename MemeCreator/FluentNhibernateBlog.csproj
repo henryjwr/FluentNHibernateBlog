@@ -59,11 +59,32 @@
     <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\Iesi.Collections.3.1.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
+    <Reference Include="Machine.Specifications">
+      <HintPath>..\packages\Machine.Specifications.0.4.24.0\lib\Machine.Specifications.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\NHibernate.3.1.0.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="NHibernate.ByteCode.Castle">
       <HintPath>..\packages\NHibernate.Castle.3.1.0.4000\lib\Net35\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks">
+      <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="pnunit.framework">
+      <HintPath>..\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\packages\RhinoMocks.3.6\lib\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.AutoMocking">
+      <HintPath>..\packages\structuremap.automocking.2.6.3\lib\StructureMap.AutoMocking.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -78,16 +99,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\Blogs\CreateBlogAction.cs" />
+    <Compile Include="Actions\Blogs\Posts\AddPostAction.cs" />
+    <Compile Include="ContextSpecification.cs" />
     <Compile Include="Domain\Blog.cs" />
     <Compile Include="Domain\Comment.cs" />
+    <Compile Include="Domain\DomainEntity.cs" />
     <Compile Include="Domain\Post.cs" />
     <Compile Include="Domain\User.cs" />
     <Compile Include="Maps\BlogMap.cs" />
     <Compile Include="Maps\CommentMap.cs" />
+    <Compile Include="Maps\DomainEntityMap.cs" />
     <Compile Include="Maps\PostMap.cs" />
     <Compile Include="Maps\UserMap.cs" />
+    <Compile Include="Persistence\IRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\CreateBlogActionTester.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -119,6 +147,10 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Actions\Blogs\Comments\" />
+    <Folder Include="Actions\Users\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -2,9 +2,8 @@
 
 namespace FluentNhibernateBlog.Domain
 {
-    public class Comment
+    public class Comment : DomainEntity
     {
-        public virtual Guid Id { get; set; }
         public virtual Blog Blog { get; set; }
         public virtual string UserComment { get; set; }
         public virtual User User { get; set; }

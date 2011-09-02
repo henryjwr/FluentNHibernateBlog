@@ -9,8 +9,6 @@ namespace FluentNhibernateBlog.Maps
          {
              Table("Comments");
 
-             Id(x => x.Id);
-
              Map(x => x.UserComment);
 
              References(x => x.Blog);

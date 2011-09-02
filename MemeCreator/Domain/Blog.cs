@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace FluentNhibernateBlog.Domain
 {
-    public class Blog
+    public class Blog : DomainEntity
     {
-        public virtual Guid Id { get; set; }
         public virtual IList<Post> _posts { get; protected set; }
         public virtual IList<Comment> _comments { get; protected set; }
         public virtual User User { get; set; }

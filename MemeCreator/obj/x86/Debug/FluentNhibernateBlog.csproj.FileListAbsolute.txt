@@ -15,3 +15,14 @@ D:\code\MemeCreator\MemeCreator\bin\Debug\NHibernate.ByteCode.Castle.xml
 D:\code\MemeCreator\MemeCreator\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\code\MemeCreator\MemeCreator\obj\x86\Debug\FluentNhibernateBlog.exe
 D:\code\MemeCreator\MemeCreator\obj\x86\Debug\FluentNhibernateBlog.pdb
+D:\code\MemeCreator\MemeCreator\bin\Debug\Machine.Specifications.dll
+D:\code\MemeCreator\MemeCreator\bin\Debug\nunit.framework.dll
+D:\code\MemeCreator\MemeCreator\bin\Debug\nunit.mocks.dll
+D:\code\MemeCreator\MemeCreator\bin\Debug\pnunit.framework.dll
+D:\code\MemeCreator\MemeCreator\bin\Debug\Rhino.Mocks.dll
+D:\code\MemeCreator\MemeCreator\bin\Debug\StructureMap.dll
+D:\code\MemeCreator\MemeCreator\bin\Debug\nunit.framework.xml
+D:\code\MemeCreator\MemeCreator\bin\Debug\StructureMap.pdb
+D:\code\MemeCreator\MemeCreator\bin\Debug\StructureMap.xml
+D:\code\MemeCreator\MemeCreator\bin\Debug\StructureMap.AutoMocking.dll
+D:\code\MemeCreator\MemeCreator\bin\Debug\StructureMap.AutoMocking.xml

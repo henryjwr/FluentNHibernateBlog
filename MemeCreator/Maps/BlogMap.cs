@@ -9,8 +9,6 @@ namespace FluentNhibernateBlog.Maps
         {
             Table("Blog");
 
-            Id(x => x.Id);
-
             Map(x => x.BlogTitle);
 
             HasMany(x => x.GetPosts()).Cascade.All();
