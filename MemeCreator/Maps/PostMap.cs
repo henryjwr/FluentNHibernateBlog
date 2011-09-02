@@ -1,17 +1,19 @@
 ﻿using FluentNHibernate.Mapping;
-using MemeCreator.Classes;
+using FluentNhibernateBlog.Domain;
 
-namespace MemeCreator.Maps
+namespace FluentNhibernateBlog.Maps
 {
     public class PostMap : ClassMap<Post>
     {
          public PostMap()
          {
              Table("Posts");
-             Id(x => x.Id);
+
              Map(x => x.PostTitle);
              Map(x => x.PostInfo);
 
+             References(x => x.Blog);
+             References(x => x.User);
          }
     }
 }
