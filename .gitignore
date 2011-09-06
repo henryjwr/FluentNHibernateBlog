@@ -5,3 +5,5 @@ _ReSharper.*
 *.resharper
 *.6.0.ReSharper
 lib/NHProf/log.txt
+_ReSharper.*
+*.6.0.ReSharper.*
