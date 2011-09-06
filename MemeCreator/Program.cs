@@ -26,7 +26,6 @@ namespace FluentNhibernateBlog
             FetchPostsWithPaging();
 
             FetchCommentsForSinglePostWIthPaging();
-
         }
 
         private static void FetchCommentsForSinglePostWIthPaging()
