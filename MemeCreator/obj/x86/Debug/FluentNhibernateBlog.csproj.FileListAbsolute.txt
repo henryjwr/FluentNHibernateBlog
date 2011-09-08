@@ -26,3 +26,6 @@ D:\code\MemeCreator\MemeCreator\bin\Debug\StructureMap.pdb
 D:\code\MemeCreator\MemeCreator\bin\Debug\StructureMap.xml
 D:\code\MemeCreator\MemeCreator\bin\Debug\StructureMap.AutoMocking.dll
 D:\code\MemeCreator\MemeCreator\bin\Debug\StructureMap.AutoMocking.xml
+C:\Code\memegenerator\MemeCreator\bin\Debug\FluentNhibernateBlog.exe.config
+C:\Code\memegenerator\MemeCreator\obj\x86\Debug\FluentNhibernateBlog.exe
+C:\Code\memegenerator\MemeCreator\obj\x86\Debug\FluentNhibernateBlog.pdb
