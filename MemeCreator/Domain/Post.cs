@@ -8,5 +8,13 @@
         public virtual User User { get; set; }
 
         public Post(){}
+
+        public Post(Blog blog, string title, string info)
+        {
+            Blog = blog;
+            PostTitle = title;
+            PostInfo = info;
+            User = blog.User;
+        }
     }
 }
