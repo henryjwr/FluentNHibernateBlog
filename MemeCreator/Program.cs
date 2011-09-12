@@ -10,6 +10,7 @@ namespace FluentNhibernateBlog
     {
         private static Configuration _configuration;
         private const string DbFile = "blogdatabase.db";
+        private static BlogBuilder blogBuilder = new BlogBuilder();
         
         static void Main(string[] args)
         {
@@ -17,6 +18,8 @@ namespace FluentNhibernateBlog
             var session = factory.OpenSession();
             Console.Write("Done");
             Console.Read();
+                        
+            blogBuilder.BuildBlog();
 
             SelectAllPostsAndCommentsWithNPlus1();
             SelectAllPostsAndCommentsNoNPlus1();
@@ -27,7 +30,7 @@ namespace FluentNhibernateBlog
 
             FetchCommentsForSinglePostWIthPaging();
         }
-
+        
         private static void FetchCommentsForSinglePostWIthPaging()
         {
             

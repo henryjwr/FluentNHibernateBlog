@@ -27,6 +27,14 @@ namespace FluentNhibernateBlog.Domain
             _comments = new List<Comment>();
         }
 
+        public Blog(User user, string blogTitle)
+        {
+            User = user;
+            BlogTitle = blogTitle;
+            _posts = new List<Post>();
+            _comments = new List<Comment>();
+        }
+
         public virtual IList<Post> GetPosts()
         {
             return _posts;
