@@ -1,11 +1,14 @@
 ﻿using System;
+using System.IO;
 using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
+using FluentNHibernate.Conventions.Helpers;
 using FluentNhibernateBlog.Domain;
 using FluentNhibernateBlog.Persistence;
 using NHibernate;
 using NHibernate.Cfg;
+using NHibernate.Tool.hbm2ddl;
 
 namespace FluentNhibernateBlog
 {
@@ -15,6 +18,7 @@ namespace FluentNhibernateBlog
         private static BlogBuilder blogBuilder;
         private static ISessionFactory factory;
         private static ISession session;
+        private static string DbFile = "blogDatabase.db";
 
         public static void Main(string[] args)
         {
@@ -70,7 +74,7 @@ namespace FluentNhibernateBlog
                 using(var transaction = tempSession.BeginTransaction())
                 {
                     //Create the Users
-                    var userOne = new User("Ninja", "Die", "Antwoord", "MulletPower");
+                    var userOne = new BlogUser("Ninja", "Die", "Antwoord", "MulletPower");
                     //var userTwo = new User("JimmyNewt", "Jimmy", "Newtron", "SweetHair");
                     //var userThree = new User("DexterL", "Dexter", "Laboratory", "DEEDEE");
 
@@ -99,7 +103,7 @@ namespace FluentNhibernateBlog
                     //var blogOnePostOneCommentOne = new Comment(blogOne, blogOnePostOne, "This is the first comment", userOne);
 
                     //Update the database.
-                    tempSession.SaveOrUpdate(userOne);
+                    //tempSession.SaveOrUpdate(userOne);
                     tempSession.SaveOrUpdate(blogOne);
                     transaction.Commit();
                 }
@@ -112,11 +116,25 @@ namespace FluentNhibernateBlog
             var configuration = new BlogConfiguration();
             
             var testing = Fluently
-                .Configure().Database(SQLiteConfiguration.Standard.UsingFile("blogDatabase.db")) // .InMemory()
-                .Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Blog>(configuration))) // FluentMappings.AddFromAssemblyOf<Program>()
-                //.ExposeConfiguration(cfg => _configuration = cfg)
+                .Configure().Database(SQLiteConfiguration.Standard.UsingFile(DbFile)) // .InMemory()
+                
+                .Mappings(m => m.AutoMappings.Add(
+                    AutoMap.AssemblyOf<Blog>(configuration)
+                    .Conventions.Add(Table.Is(x => x.EntityType.Name + "Table"))
+                    .Conventions.Add(DefaultCascade.SaveUpdate())
+                        ))
+                    // FluentMappings.AddFromAssemblyOf<Program>()
+                .ExposeConfiguration(BuildSchema)
                 .BuildSessionFactory();
             return testing;
+        }
+
+        private static void BuildSchema(Configuration obj)
+        {
+            if(File.Exists(DbFile))
+                File.Delete(DbFile);
+
+            new SchemaExport(obj).Create(false, true);
         }
     }
 }

@@ -15,9 +15,9 @@ namespace FluentNhibernateBlog
         public void BuildBlog()
         {
             //Create the Users
-            var userOne = new User("Ninja", "Die", "Antwoord", "MulletPower");
-            var userTwo = new User("JimmyNewt", "Jimmy", "Newtron", "SweetHair");
-            var userThree = new User("DexterL", "Dexter", "Laboratory", "DEEDEE");
+            var userOne = new BlogUser("Ninja", "Die", "Antwoord", "MulletPower");
+            var userTwo = new BlogUser("JimmyNewt", "Jimmy", "Newtron", "SweetHair");
+            var userThree = new BlogUser("DexterL", "Dexter", "Laboratory", "DEEDEE");
 
             //Create the Blogs
             var blogOne = new Blog(userOne, "I'm a Ninja yo.  I'm in tha zone.");

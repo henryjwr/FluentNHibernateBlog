@@ -1,6 +1,6 @@
 ﻿namespace FluentNhibernateBlog.Domain
 {
-    public class User : DomainEntity
+    public class BlogUser : DomainEntity
     {
         public virtual Blog Blog { get; set; }
         public virtual string UserName { get; set; }
@@ -8,20 +8,14 @@
         public virtual string LastName { get; set; }
         public virtual string Password { get; set; }
 
-        public User() { }
+        public BlogUser() { }
 
-        public User(string userName, string firstName, string lastName, string password)
+        public BlogUser(string userName, string firstName, string lastName, string password)
         {
             UserName = userName;
             FirstName = firstName;
             LastName = lastName;
             Password = password;
-        }
-
-        public void AddBlog(Blog blog)
-        {
-            Blog = blog;
-            Blog.AddUser(this);
         }
     }
 }

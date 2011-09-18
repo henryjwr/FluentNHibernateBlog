@@ -8,7 +8,7 @@ namespace FluentNhibernateBlog.Domain
         public virtual Blog Blog { get; set; }
         public virtual string PostTitle { get; set; }
         public virtual string PostInfo { get; set; }
-        public virtual User User { get; set; }
+        public virtual BlogUser BlogUser { get; set; }
 
         public Post(){}
 
@@ -17,7 +17,7 @@ namespace FluentNhibernateBlog.Domain
             Blog = blog;
             PostTitle = title;
             PostInfo = info;
-            User = blog.User;
+            BlogUser = blog.BlogUser;
         }
     }
 }

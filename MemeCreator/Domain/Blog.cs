@@ -6,7 +6,7 @@ namespace FluentNhibernateBlog.Domain
     {
         public virtual IList<Post> _posts { get; protected set; }
         public virtual IList<Comment> _comments { get; protected set; }
-        public virtual User User { get; set; }
+        public virtual BlogUser BlogUser { get; set; }
         public virtual string BlogTitle { get; set; }
 
         public virtual void AddPost(Post post)
@@ -27,9 +27,9 @@ namespace FluentNhibernateBlog.Domain
             _comments = new List<Comment>();
         }
 
-        public Blog(User user, string blogTitle)
+        public Blog(BlogUser blogUser, string blogTitle)
         {
-            User = user;
+            BlogUser = blogUser;
             BlogTitle = blogTitle;
             _posts = new List<Post>();
             _comments = new List<Comment>();
@@ -43,12 +43,6 @@ namespace FluentNhibernateBlog.Domain
         public virtual IList<Comment> GetComments()
         {
             return _comments;
-        }
-
-        public virtual void AddUser(User user)
-        {
-            user.AddBlog(this);
-            User = user;
         }
     }
 }
