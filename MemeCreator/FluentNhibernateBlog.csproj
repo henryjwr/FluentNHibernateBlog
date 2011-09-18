@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlogBuilder.cs" />
+    <Compile Include="BlogConfiguration.cs" />
     <Compile Include="ContextSpecification.cs" />
     <Compile Include="Domain\Blog.cs" />
     <Compile Include="Domain\Comment.cs" />

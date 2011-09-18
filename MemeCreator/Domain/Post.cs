@@ -1,7 +1,10 @@
-﻿namespace FluentNhibernateBlog.Domain
+﻿using System;
+
+namespace FluentNhibernateBlog.Domain
 {
     public class Post
     {
+        public virtual Guid Id { get; private set; }
         public virtual Blog Blog { get; set; }
         public virtual string PostTitle { get; set; }
         public virtual string PostInfo { get; set; }

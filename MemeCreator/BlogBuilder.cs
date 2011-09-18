@@ -1,27 +1,42 @@
 ﻿using FluentNhibernateBlog.Domain;
+using FluentNhibernateBlog.Persistence;
 
 namespace FluentNhibernateBlog
 {
     class BlogBuilder
     {
-        public BlogBuilder() {}
+        private readonly IRepository<Blog> _blogService;
+
+        public BlogBuilder(IRepository<Blog> blogService )
+        {
+
+            _blogService = blogService;
+        }
 
         public void BuildBlog()
         {
             //Create the Users
             var userOne = new User("Ninja", "Die", "Antwoord", "MulletPower");
-            var userTwo = new User("MikeL", "Mike", "Lebowsky", "54321");
-            var userThree = new User("JimmyNewt", "Jimmy", "Newtron", "SweetHair");
-            var userFour = new User("DexterL", "Dexter", "Laboratory", "DEEDEE");
+            var userTwo = new User("JimmyNewt", "Jimmy", "Newtron", "SweetHair");
+            var userThree = new User("DexterL", "Dexter", "Laboratory", "DEEDEE");
 
             //Create the Blogs
             var blogOne = new Blog(userOne, "I'm a Ninja yo.  I'm in tha zone.");
-            var blogTwo = new Blog(userTwo, "Scaring Kids");
-            var blogThree = new Blog(userThree, "Creating funky inventions");
-            var blogFour = new Blog(userFour, "Making sweet world dmination tools.");
+            var blogTwo = new Blog(userTwo, "Creating funky inventions");
+            var blogThree = new Blog(userThree, "Making sweet world dmination tools.");
 
-            //Post to the Blogs
-            var blogOnePostOne = new Post(blogOne, "", "");
+            //Post to the first Blog
+            var blogOnePostOne = new Post(blogOne, "Post One", "This is the first post");
+            var blogOnePostTwo = new Post(blogOne, "Post Two", "This is the Second post");
+            var blogOnePostThree = new Post(blogOne, "Post Three", "This is the Third post");
+            var blogOnePostFour = new Post(blogOne, "Post Four", "This is the Fourth post");
+            var blogOnePostFive = new Post(blogOne, "Post Five", "This is the Fifth post");
+            var blogOnePostSix = new Post(blogOne, "Post Six", "This is the Sixth post");
+            var blogOnePostSeven = new Post(blogOne, "Post Seven", "This is the Seventh post");
+
+            //Comments to Blog one posts
+            var blogOnePostOneCommentOne = new Comment(blogOne, "This is the first comment", userOne);
+            _blogService.Save(blogOne);
         }
     }
 }

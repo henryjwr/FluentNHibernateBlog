@@ -1,21 +1,25 @@
 ﻿using System;
+using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
+using FluentNhibernateBlog.Domain;
+using FluentNhibernateBlog.Persistence;
 using NHibernate;
 using NHibernate.Cfg;
 
 namespace FluentNhibernateBlog
 {
-    class Program
+    public class Program
     {
         private static Configuration _configuration;
         private const string DbFile = "blogdatabase.db";
-        private static BlogBuilder blogBuilder = new BlogBuilder();
+        private static BlogBuilder blogBuilder;
         
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var factory = CreateSessionFactory();
             var session = factory.OpenSession();
+            blogBuilder = new BlogBuilder(new NHibernateRepository<Blog>(session));
             Console.Write("Done");
             Console.Read();
                         
@@ -58,10 +62,13 @@ namespace FluentNhibernateBlog
 
         private static ISessionFactory CreateSessionFactory()
         {
+            var configuration = new BlogConfiguration();
+            
             var testing = Fluently
-                .Configure().Database(SQLiteConfiguration.Standard.InMemory())
-                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Program>())
+                .Configure().Database(SQLiteConfiguration.Standard.UsingFile("blogDatabase.db")) // .InMemory()
+                .Mappings(m => m.AutoMappings.Add(AutoMap.AssemblyOf<Blog>(configuration))) // FluentMappings.AddFromAssemblyOf<Program>()
                 .ExposeConfiguration(cfg => _configuration = cfg)
+                
                 .BuildSessionFactory();
             return testing;
         }
