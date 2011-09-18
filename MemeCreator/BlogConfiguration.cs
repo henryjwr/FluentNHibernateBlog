@@ -1,5 +1,6 @@
 ﻿using System;
 using FluentNHibernate.Automapping;
+using FluentNhibernateBlog.Domain;
 
 namespace FluentNhibernateBlog
 {

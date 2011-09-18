@@ -44,5 +44,11 @@ namespace FluentNhibernateBlog.Domain
         {
             return _comments;
         }
+
+        public virtual void AddUser(User user)
+        {
+            user.AddBlog(this);
+            User = user;
+        }
     }
 }

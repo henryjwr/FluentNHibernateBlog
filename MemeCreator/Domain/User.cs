@@ -17,5 +17,11 @@
             LastName = lastName;
             Password = password;
         }
+
+        public void AddBlog(Blog blog)
+        {
+            Blog = blog;
+            Blog.AddUser(this);
+        }
     }
 }
