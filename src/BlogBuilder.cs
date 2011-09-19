@@ -1,6 +1,5 @@
 ﻿using FluentNhibernateBlog.Domain;
 using FluentNhibernateBlog.Persistence;
-using Machine.Specifications.Utility.Internal;
 
 namespace FluentNhibernateBlog
 {

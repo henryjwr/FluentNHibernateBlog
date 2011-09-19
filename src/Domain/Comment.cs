@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FluentNhibernateBlog.Domain
+﻿namespace FluentNhibernateBlog.Domain
 {
     public class Comment : DomainEntity
     {

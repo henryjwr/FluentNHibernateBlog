@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using FluentNHibernate.MappingModel;
+﻿using System.Collections.Generic;
 
 namespace FluentNhibernateBlog.Domain
 {
