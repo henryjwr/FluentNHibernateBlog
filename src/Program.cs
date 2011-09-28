@@ -44,7 +44,6 @@ namespace FluentNhibernateBlog
 
             GetPostAndCommentCountsForEachUser();
             GetSinglePageOfPostsForUserWithCommentCountForEachPost();
-            //FetchPostsWithPaging();
 
             //FetchCommentsForSinglePostWIthPagingLinq();
 
